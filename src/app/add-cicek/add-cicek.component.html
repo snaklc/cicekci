@@ -1,0 +1,30 @@
+<h1>Yeni Çiçek Ekle</h1>
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <label for="cicek-name">Çiçek adı:</label>
+    <input type="text" formControlName="name">
+
+    <div *ngIf="form.get('name').touched && form.get('name').invalid">
+        <div class="uyari" *ngIf="form.get('name').errors.required">Lütfen ad bölümünü boş bırakmayınız</div>
+    </div>
+
+    <label for="cicek-price">Çiçek fiyatı:</label>
+    <input type="number" formControlName="price">
+
+    <div *ngIf="form.get('price').touched && form.get('price').invalid">
+        <div class="uyari" *ngIf="form.get('price').errors.required">Lütfen fiyat bölümünü boş bırakmayınız</div>
+    </div>
+
+    <label for="cicek-imageUrl">Çiçek url:</label>
+    <input type="text" formControlName="path">
+
+    <div *ngIf="form.get('path').touched && form.get('path').invalid">
+        <div class="uyari" *ngIf="form.get('path').errors.required">Lütfen url bölümünü boş bırakmayınız</div>
+    </div>
+    <div class="buttons">
+        <button class="ekle-button" type="submit" >Ekle</button>
+        <a routerLink="/cicekler" class="iptal-button" type="button">İptal</a>
+    </div>
+</form>

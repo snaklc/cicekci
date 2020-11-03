@@ -1,0 +1,108 @@
+
+.container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+h1 {
+    margin: 7px 0px 7px 0px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+ 
+}
+
+.baslik{
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+
+
+.header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+    /* background: url("https://i.pinimg.com/originals/e5/ba/57/e5ba575286c53b18da0dd4911a26d980.jpg") no-repeat  center; */
+}
+
+
+.ekle-button{
+    outline: none;
+    border: none;
+    padding: 10px 30px 10px 20px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(216, 215, 215, 0.61);
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+}
+
+.ekle-button:hover{
+    background-color: rgba(165, 164, 164, 0.521);
+}
+
+svg{
+    position: absolute;
+    right: 115px;
+    top: 27px;
+}
+
+.cicek-container{
+    padding-top: 10px;
+    padding-right: 30px;
+ 
+  
+}
+.cicek-container:hover{
+  cursor: pointer;
+}
+
+
+.foto{
+    width: 320px;
+    height: 200px;
+    border-radius: 5px;
+     
+}
+
+.foto:hover {
+    box-shadow: 0 0 5px 5px rgba(221, 86, 160, 0.5);  
+
+  }
+
+.cicek-name{
+  font-size: 18px;
+  text-align: center;
+  line-height: 1px;
+}
+
+.cicek-name:hover{
+    color:  rgba(160, 61, 115, 0.541);  
+    
+}
+
+.cicek-price{
+  font-size: 15px;
+  text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
